@@ -3,14 +3,14 @@ import { FaDownload } from "react-icons/fa";
 
 export default function Intro() {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between bg-gradient-to-r from-dark via-cardColor to-black">
       <div className="w-[50%] p-20">
         <h1 className="text-[40px] text-lightBlue font-bold">
           <span className="text-myOrange">One platform </span>
           to connect sellers and buyers. List your products and your needs
         </h1>
 
-        <h1 className="text-[20px] text-myGray font-bold mt-20">
+        <h1 className="text-[18px] text-myGray font-semi-bold mt-20">
           Download our <span className="text-myOrange">mobile app</span> and
           access to hundreds of buyers and seller from all over Kenya.
         </h1>

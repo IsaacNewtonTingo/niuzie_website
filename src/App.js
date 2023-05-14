@@ -1,4 +1,5 @@
 import "./App.css";
+import AboutUs from "./components/AboutUs";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 
@@ -7,6 +8,7 @@ function App() {
     <div className="bg-dark h-full">
       <Header />
       <Intro />
+      <AboutUs />
     </div>
   );
 }
