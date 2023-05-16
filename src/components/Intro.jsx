@@ -2,6 +2,7 @@ import React from "react";
 import { FaDownload } from "react-icons/fa";
 
 export default function Intro() {
+  //--------
   return (
     <div className="flex justify-between bg-gradient-to-r from-dark via-cardColor to-black">
       <div className="w-[50%] p-20">
