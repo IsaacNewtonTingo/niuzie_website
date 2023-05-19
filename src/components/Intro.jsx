@@ -5,8 +5,8 @@ export default function Intro() {
   //--------
   //--------
   return (
-    <div className="flex justify-between bg-gradient-to-r from-dark via-cardColor to-black">
-      <div className="w-[50%] p-20">
+    <div className="flex justify-between bg-gradient-to-r from-dark via-cardColor to-black px-20">
+      <div className="w-[50%] pt-20">
         <h1 className="text-[40px] text-lightBlue font-bold">
           <span className="text-myOrange">One platform </span>
           to connect sellers and buyers. List your products and your needs
@@ -26,7 +26,7 @@ export default function Intro() {
       <img
         src="/lead-img.png"
         alt="niuzie app"
-        className="w-[40%] object-contain"
+        className="w-[30%] object-contain"
       />
     </div>
   );
