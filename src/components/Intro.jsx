@@ -5,7 +5,7 @@ export default function Intro() {
   //--------
   //--------
   return (
-    <div className="flex justify-between bg-gradient-to-r from-dark via-cardColor to-black px-20">
+    <div className="flex justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-20 mt-[80px]">
       <div className="w-[50%] pt-20">
         <h1 className="text-[40px] text-lightBlue font-bold">
           <span className="text-myOrange">One platform </span>

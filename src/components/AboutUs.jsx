@@ -5,7 +5,7 @@ export default function AboutUs() {
     <div className="p-20">
       <h1 className="text-myOrange font-bold text-[30px]">About Us</h1>
 
-      <p className="text-lightBlue mt-10">
+      <p className="mt-10">
         Niuzie platform was established in January 2023 and seeks to be a
         reliable, credible and safe platform that brings together buyers and
         sellers of preloved items. We strive to ensure our buyers and sellers
