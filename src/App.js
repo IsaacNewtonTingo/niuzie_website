@@ -1,5 +1,6 @@
 import "./App.css";
 import AboutUs from "./components/AboutUs";
+import ContactUs from "./components/ContactUs";
 import Faqs from "./components/Faqs";
 import Header from "./components/Header";
 import How from "./components/How";
@@ -13,6 +14,7 @@ function App() {
       <AboutUs />
       <How />
       <Faqs />
+      <ContactUs />
     </div>
   );
 }
