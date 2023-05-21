@@ -3,7 +3,7 @@ import React from "react";
 export default function How({ id }) {
   return (
     <div id={id} className="">
-      <div className="bg-gradient-to-r from-dark via-cardColor to-dark px-40 py-10">
+      <div className="bg-gradient-to-r from-dark via-cardColor to-dark px-10 sm:px-40 py-10">
         <h1 className="text-myOrange font-bold text-[30px]">How it works</h1>
         <p className="text-lightBlue mt-10">
           The below section describes various steps to take when interacting
@@ -37,31 +37,31 @@ export default function How({ id }) {
       <br />
       <br />
 
-      <div className="px-40 py-10">
+      <div className="px-10 sm:px-40 py-10">
         <p className="font-bold">a. Listing products for free</p> <br />
-        <div className="flex items-center justify-between">
-          <li className="w-[70%]">
+        <div className=" sm:flex sm:items-center sm:justify-between">
+          <li className="w-full sm:w-[70%]">
             Click on the plus icon in the bottom tab navigation. This will open
             a screen that will give you two options (Posting a product you are
             selling or posting a product you are looking for)
           </li>
 
           <img
-            className="w-[25%] border-[1px] border-gray-800 rounded-lg"
+            className="w-[100%] mt-8 sm:w-[25%] border-[1px] border-gray-800 rounded-lg"
             src="/post-options.jpeg"
             alt="post-options-niuzie"
           />
         </div>
       </div>
-      <div className="flex items-center justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-40 py-10">
+      <div className="sm:flex sm:items-center sm:justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-10 sm:px-40 py-10">
         <div>
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             Go ahead and click “Post product” button. If you haven't created an
             account, a registration window will show. Finish the registration
             process then come back and continue the process.
           </li>
           <br />
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             If you are already logged in this screen will open where you will
             enter your product details including images of the given product.
             You will only be able to add up to 8 images.
@@ -69,116 +69,116 @@ export default function How({ id }) {
         </div>
 
         <img
-          className="w-[25%]  border-[1px] border-gray-800 rounded-lg"
+          className="w-[100%] mt-8 sm:w-[25%]  border-[1px] border-gray-800 rounded-lg"
           src="/post-product.jpeg"
           alt="post-product-niuzie"
         />
       </div>
-      <div className="flex items-center justify-between px-40 py-10">
+      <div className="sm:flex sm:items-center sm:justify-between px-10 sm:px-40 py-10">
         <div>
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             Note that your personal details at the bottom cannot be edited in
             this screen. Navigate to your profile to perform this functionality.
           </li>
           <br />
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             After you have entered all the required fields, scroll to the bottom
             of the screen and press the “Post product” button
           </li>
           <br />
 
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             This will automatically post your product and your product details
             screen will open.
           </li>
           <br />
 
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             You will have to wait for your product to be reviewed by the admin
             before it can go live for everyone to view. This takes a few minutes
             to a maximum of 24 hours
           </li>
           <br />
 
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             Upon approval, you will receive a notification and your product will
             be visible to the public
           </li>
         </div>
 
         <img
-          className="w-[25%]  border-[1px] border-gray-800 rounded-lg"
+          className="w-[100%] mt-8 sm:w-[25%] border-[1px] border-gray-800 rounded-lg"
           src="/product-details.jpeg"
           alt="post-product-niuzie"
         />
       </div>
 
-      <div className="bg-gradient-to-r from-dark via-cardColor to-dark px-40 py-10">
+      <div className="bg-gradient-to-r from-dark via-cardColor to-dark px-10 sm:px-40 py-10">
         <p className="font-bold">
           b. Listing product when you have exceeded the limit (2)
         </p>
         <br />
-        <div className="flex items-center justify-between">
-          <li className="w-[70%]">
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <li className="w-full sm:w-[70%]">
             When you are at the post product screen and you have already posted
             two products for free as a regular user, you will see a warning at
             the top with that information.
           </li>
 
           <img
-            className="w-[25%] border-[1px] border-gray-800 rounded-lg"
+            className="w-[100%] mt-8 sm:w-[25%] border-[1px] border-gray-800 rounded-lg"
             src="/product-limit.jpeg"
             alt="niuzie-product-limit"
           />
         </div>
       </div>
 
-      <div className="flex items-center justify-between px-40 py-10">
+      <div className="sm:flex sm:items-center sm:justify-between px-10 sm:px-40 py-10">
         <div>
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             When you list new products, these products will be added to the cart
             which you can see at the top right corner of the screen
           </li>
           <br />
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             After you have added all the products you want, you can click on the
             cart icon that will take you to a page where you can see all the
             products that are pending.
           </li>
           <br />
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             Click on pay now to complete the product listing process
           </li>
         </div>
 
         <img
-          className="w-[25%]  border-[1px] border-gray-800 rounded-lg"
+          className="w-[100%] mt-8 sm:w-[25%] border-[1px] border-gray-800 rounded-lg"
           src="/pending-products.jpeg"
           alt="pending-products-niuzie"
         />
       </div>
 
-      <div className="flex items-center justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-40 py-10">
+      <div className="sm:flex sm:items-center sm:justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-10 sm:px-40 py-10">
         <div>
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             A new window will that will enable you to enter your M-PESA phone
             number and complete the payment
           </li>
           <br />
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             You will now wait for approval from the admin and your product will
             be live. This takes a few minutes to a maximum of 24 hours.
           </li>
         </div>
 
         <img
-          className="w-[25%]  border-[1px] border-gray-800 rounded-lg"
+          className="w-[100%] mt-8 sm:w-[25%] border-[1px] border-gray-800 rounded-lg"
           src="/payment.jpeg"
           alt="pay-for-products-niuzie"
         />
       </div>
 
-      <div className=" px-40 py-10">
+      <div className=" px-10 sm:px-40 py-10">
         <p className="font-bold">c. Listing product as a premium member</p>
         <br />
         <p>
@@ -205,14 +205,14 @@ export default function How({ id }) {
         </li>
       </div>
 
-      <div className="flex items-center justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-40 py-10">
+      <div className="sm:flex sm:items-center sm:justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-10 sm:px-40 py-10">
         <div>
           <p className="font-bold">3. Posting a product request</p> <br />
-          <p className="w-[70%]">
+          <p className="w-full sm:w-[70%]">
             You can also post a product that you are looking for as a buyer.
           </p>
           <br />
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             Click on the plus icon in the bottom tab navigation. This will open
             a screen that will give you two options (Posting a product you are
             selling or posting a product you are looking for)
@@ -220,21 +220,21 @@ export default function How({ id }) {
         </div>
 
         <img
-          className="w-[25%]  border-[1px] border-gray-800 rounded-lg"
+          className="w-[100%] mt-8 sm:w-[25%] border-[1px] border-gray-800 rounded-lg"
           src="/post-options.jpeg"
           alt="post-products-niuzie"
         />
       </div>
 
-      <div className="flex items-center justify-between px-40 py-10">
+      <div className="sm:flex sm:items-center sm:justify-between px-10 sm:px-40 py-10">
         <div>
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             Go ahead and click “Post product request” button. If you haven't
             created an account, a registration window will show. Finish the
             registration process then come back and continue the process.
           </li>
           <br />
-          <li className="w-[70%]">
+          <li className="w-full sm:w-[70%]">
             If you are already logged in, you will see the below screen that you
             can give a description of the product that you are looking for.
             Sellers will be able to see your contact details and reach out you.
@@ -242,7 +242,7 @@ export default function How({ id }) {
         </div>
 
         <img
-          className="w-[25%]  border-[1px] border-gray-800 rounded-lg"
+          className="w-[100%] mt-8 sm:w-[25%] border-[1px] border-gray-800 rounded-lg"
           src="/buyer-request.jpeg"
           alt="niuzie-buyer-request"
         />

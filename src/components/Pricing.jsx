@@ -67,14 +67,16 @@ export default function Pricing({ id }) {
   return (
     <div
       id={id}
-      className="bg-gradient-to-r from-dark via-cardColor to-dark px-20 py-10"
+      className="bg-gradient-to-r from-dark via-cardColor to-dark px-10 sm:px-40 py-10"
     >
       <h1 className="text-myOrange font-bold text-[30px]">Pricing</h1>
 
-      <div className="flex items-center justify-between mt-10">
-        <div className="bg-dark p-10 rounded-lg flex-row items-center">
-          <h1 className="text-center font-bold text-[30px]">Basic</h1>
-          <h1 className="text-center font-bold text-[20px] text-myGray mb-10">
+      <div className="sm:flex sm:items-center sm:justify-between mt-10">
+        <div className="bg-dark p-8 rounded-lg flex-row items-center">
+          <h1 className="text-center font-bold text-[20px] sm:text-[30px]">
+            Basic
+          </h1>
+          <h1 className="text-center font-bold text-[20px] text-myGray mb-6 sm:mb-10">
             Ksh. 00.00
           </h1>
 
@@ -85,12 +87,12 @@ export default function Pricing({ id }) {
               ) : (
                 <RxCrossCircled color="red" />
               )}
-              <p className="ml-2">{item.name}</p>
+              <p className="ml-2 text-sm">{item.name}</p>
             </div>
           ))}
         </div>
 
-        <div className="bg-dark p-10 rounded-lg flex-row items-center">
+        {/* <div className="bg-dark p-10 rounded-lg flex-row items-center">
           <h1 className="text-center font-bold text-[30px]">Gold</h1>
           <h1 className="text-center font-bold text-[20px] text-myGray mb-10">
             Ksh. 00.00
@@ -106,11 +108,13 @@ export default function Pricing({ id }) {
               <p className="ml-2">{item.name}</p>
             </div>
           ))}
-        </div>
+        </div> */}
 
-        <div className="bg-dark p-10 rounded-lg flex-row items-center">
-          <h1 className="text-center font-bold text-[30px]">Platinum</h1>
-          <h1 className="text-center font-bold text-[20px] text-myGray mb-10">
+        <div className="bg-dark p-10 rounded-lg flex-row items-center mt-10 sm:mt-0">
+          <h1 className="text-center font-bold text-[20px] sm:text-[30px]">
+            Platinum
+          </h1>
+          <h1 className="text-center font-bold text-[20px] text-myGray mb-6 sm:mb-10">
             Ksh. 500.00/week
           </h1>
 
@@ -121,7 +125,7 @@ export default function Pricing({ id }) {
               ) : (
                 <RxCrossCircled color="red" />
               )}
-              <p className="ml-2">{item.name}</p>
+              <p className="ml-2 text-sm">{item.name}</p>
             </div>
           ))}
         </div>

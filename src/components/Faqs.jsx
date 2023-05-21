@@ -3,13 +3,13 @@ import { BsFillSquareFill } from "react-icons/bs";
 
 export default function Faqs({ id }) {
   return (
-    <div id={id} className="px-40 py-10">
+    <div id={id} className="px-10 sm:px-40 py-10">
       <h1 className="text-myOrange font-bold text-[30px]">
         Frequently Asked Questions
       </h1>
 
-      <div className="flex justify-between">
-        <div className="mt-10 w-[40%]">
+      <div className="sm:flex sm:justify-between">
+        <div className="mt-10 w-full sm:w-[40%]">
           <div className="flex items-center">
             <BsFillSquareFill className="text-myOrange mr-3" />
             <p className="font-bold">Who can use our services?</p>
@@ -20,7 +20,7 @@ export default function Faqs({ id }) {
           </p>
         </div>
 
-        <div className="mt-10 w-[40%]">
+        <div className="mt-10 w-full sm:w-[40%]">
           <div className="flex items-center">
             <BsFillSquareFill className="text-myOrange mr-3" />
             <p className="font-bold">Do I need to signup?</p>
@@ -33,8 +33,8 @@ export default function Faqs({ id }) {
         </div>
       </div>
 
-      <div className="flex justify-between">
-        <div className="mt-10 w-[40%]">
+      <div className="sm:flex justify-between">
+        <div className="mt-10 w-full sm:w-[40%]">
           <div className="flex items-center">
             <BsFillSquareFill className="text-myOrange mr-3" />
             <p className="font-bold">Is there a waiting period?</p>
@@ -45,7 +45,7 @@ export default function Faqs({ id }) {
           </p>
         </div>
 
-        <div className="mt-10 w-[40%]">
+        <div className="mt-10 w-full sm:w-[40%]">
           <div className="flex items-center">
             <BsFillSquareFill className="text-myOrange mr-3" />
             <p className="font-bold">Is it secure to use?</p>

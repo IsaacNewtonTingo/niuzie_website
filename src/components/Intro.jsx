@@ -5,15 +5,15 @@ export default function Intro({ id }) {
   return (
     <div
       id={id}
-      className="flex justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-40 mt-[80px]"
+      className="sm:flex justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-10px sm:px-40 mt-[80px]"
     >
-      <div className="w-[50%] py-20">
-        <h1 className="text-[40px] text-lightBlue font-bold">
+      <div className="w-full sm:w-[50%] p-10  sm:py-20">
+        <h1 className="text-[20px] sm:text-[40px] text-lightBlue font-bold">
           <span className="text-myOrange">One platform </span>
           to connect sellers and buyers. List your products and your needs
         </h1>
 
-        <h1 className="text-[18px] text-myGray font-semi-bold mt-20">
+        <h1 className="text-[16px] sm:text-[18px] text-myGray font-semi-bold mt-10 sm:mt-20">
           Download our <span className="text-myOrange">mobile app</span> and
           access to hundreds of buyers and seller from all over Kenya.
         </h1>
@@ -33,7 +33,7 @@ export default function Intro({ id }) {
       <img
         src="/lead-img.png"
         alt="niuzie app"
-        className="w-[30%] object-contain"
+        className="w-full sm:w-[30%] object-contain"
       />
     </div>
   );
