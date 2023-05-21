@@ -64,7 +64,7 @@ export default function Header({ scrollToSection }) {
                 lgooth={true}
                 offset={-70}
                 duration={500}
-                className="text-lightBlue text-lg font-semibold mr-8 hover:text-myOrange cursor-pointer"
+                className="text-lightBlue text-lg sm:text-sm font-semibold mr-8 hover:text-myOrange cursor-pointer"
                 key={i}
               >
                 {item.name}
@@ -78,7 +78,7 @@ export default function Header({ scrollToSection }) {
             rel="noreferrer"
             className="hidden lg:block"
           >
-            <button className="bg-myOrange text-lg h-[40px] px-4 font-bold text-white rounded-lg lg:flex flex-row items-center justify-between hidden">
+            <button className="bg-myOrange text-lg sm:text-sm h-[40px] px-4 font-bold text-white rounded-lg lg:flex flex-row items-center justify-between hidden">
               <p>Download the app</p>
               <FaDownload className="ml-4" />
             </button>

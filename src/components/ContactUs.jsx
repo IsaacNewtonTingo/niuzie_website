@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import {
@@ -7,6 +7,10 @@ import {
   AiOutlineInstagram,
 } from "react-icons/ai";
 import Input from "./Input";
+import axios from "axios";
+import { Toaster, toast } from "react-hot-toast";
+
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactUs({ id }) {
   const [data, setData] = useState({
@@ -14,7 +18,12 @@ export default function ContactUs({ id }) {
     lastName: "",
     phoneNumber: "",
     message: "",
+    recaptchaToken: "",
   });
+
+  const [processing, setProcessing] = useState(false);
+
+  const captchaRef = useRef(null);
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -26,13 +35,44 @@ export default function ContactUs({ id }) {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    console.log(data);
+    setProcessing(true);
+
+    const token = captchaRef.current.getValue();
+    setData({
+      ...data,
+      recaptchaToken: token,
+    });
+    captchaRef.current.reset();
+
+    const url = `${process.env.REACT_APP_ENDPOINT}/user/web-contact-us`;
+
+    await axios
+      .post(url, data)
+      .then((response) => {
+        setProcessing(false);
+        if (response.data.status === "Success") {
+          toast.success("Your message was sent successfully");
+          setData({
+            firstName: "",
+            lastName: "",
+            phoneNumber: "",
+            message: "",
+          });
+        } else {
+          toast.error(response.data.message);
+        }
+      })
+      .catch((err) => {
+        toast.error(err.message);
+        setProcessing(false);
+      });
   }
   return (
     <div
       id={id}
       className="bg-gradient-to-r from-dark via-cardColor to-dark px-10 md:px-20 xl:px-40 py-10 sm:flex justify-between"
     >
+      <Toaster />
       <div className="w-full md:w-[50%] xl:w-[40%]">
         <h1 className="text-myOrange font-bold text-[30px]">Contact Us</h1>
 
@@ -174,9 +214,18 @@ export default function ContactUs({ id }) {
             rows="10"
             value={data.message}
             onChange={handleChange}
-            className={`rounded-lg h-[100px] w-full p-4 mt-4 text-sm bg-dark border-[#0085FF] border-[1px]`}
+            className={`rounded-lg h-[100px] w-full p-4 my-4 text-sm bg-dark border-[#0085FF] border-[1px]`}
           ></textarea>
-          <button className="bg-myOrange text-sm w-full h-[40px] px-4 mt-4 font-bold text-white rounded-lg flex flex-row items-center justify-center ">
+          <ReCAPTCHA
+            sitekey={process.env.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY}
+            ref={captchaRef}
+          />
+          <button
+            disabled={processing}
+            className={`bg-myOrange text-sm w-full h-[40px] px-4 mt-4 font-bold text-white rounded-lg flex flex-row items-center justify-center ${
+              processing && "opacity-10"
+            }`}
+          >
             <p>Send message</p>
           </button>
         </form>

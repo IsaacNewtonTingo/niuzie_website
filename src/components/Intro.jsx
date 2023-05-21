@@ -23,7 +23,7 @@ export default function Intro({ id }) {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="bg-myOrange text-lg h-[40px] px-4 font-bold text-white rounded-lg flex flex-row items-center justify-between mt-10">
+          <button className="bg-myOrange text-lg sm:text-sm  h-[40px] px-4 font-bold text-white rounded-lg flex flex-row items-center justify-between mt-10">
             <p>Download the app</p>
             <FaDownload className="ml-4" />
           </button>
