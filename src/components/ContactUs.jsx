@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 import Input from "./Input";
 
-export default function ContactUs() {
+export default function ContactUs({ id }) {
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -29,7 +29,10 @@ export default function ContactUs() {
     console.log(data);
   }
   return (
-    <div className="bg-gradient-to-r from-dark via-cardColor to-dark px-40 py-10 flex justify-between">
+    <div
+      id={id}
+      className="bg-gradient-to-r from-dark via-cardColor to-dark px-40 py-10 flex justify-between"
+    >
       <div className="w-[40%]">
         <h1 className="text-myOrange font-bold text-[30px]">Contact Us</h1>
 

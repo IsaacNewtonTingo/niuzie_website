@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function How() {
+export default function How({ id }) {
   return (
-    <div className="">
+    <div id={id} className="">
       <div className="bg-gradient-to-r from-dark via-cardColor to-dark px-40 py-10">
         <h1 className="text-myOrange font-bold text-[30px]">How it works</h1>
         <p className="text-lightBlue mt-10">

@@ -1,15 +1,20 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa";
+import { Link } from "react-scroll";
 
-export default function Header() {
+export default function Header({ scrollToSection }) {
   const linkItems = [
     {
+      name: "Home",
+      linkTo: "intro",
+    },
+    {
       name: "About Us",
-      linkTo: "aboutUs",
+      linkTo: "about-us",
     },
     {
       name: "How it works",
-      linkTo: "howItWorks",
+      linkTo: "how-it-works",
     },
     {
       name: "Pricing",
@@ -21,7 +26,7 @@ export default function Header() {
     },
     {
       name: "Contact Us",
-      linkTo: "contactUs",
+      linkTo: "contact-us",
     },
   ];
 
@@ -35,19 +40,31 @@ export default function Header() {
 
       <div className="flex">
         {linkItems.map((item, i) => (
-          <p
+          <Link
+            activeClass="active"
+            to={item.linkTo}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
             className="text-lightBlue text-sm font-semibold mr-8 hover:text-myOrange cursor-pointer"
             key={i}
           >
             {item.name}
-          </p>
+          </Link>
         ))}
       </div>
 
-      <button className="bg-myOrange text-sm h-[40px] px-4 font-bold text-white rounded-lg flex flex-row items-center justify-between ">
-        <p>Download the app</p>
-        <FaDownload className="ml-4" />
-      </button>
+      <a
+        href="https://play.google.com/store/search?q=niuzie&c=apps"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className="bg-myOrange text-sm h-[40px] px-4 font-bold text-white rounded-lg flex flex-row items-center justify-between ">
+          <p>Download the app</p>
+          <FaDownload className="ml-4" />
+        </button>
+      </a>
     </div>
   );
 }

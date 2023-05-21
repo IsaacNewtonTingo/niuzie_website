@@ -5,3 +5,9 @@
 body {
   background-color: rgb(2, 3, 12);
 }
+html {
+  scroll-behavior: smooth;
+}
+.active {
+  color: #C55300;
+}

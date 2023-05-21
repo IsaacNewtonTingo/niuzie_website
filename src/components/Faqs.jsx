@@ -1,9 +1,9 @@
 import React from "react";
 import { BsFillSquareFill } from "react-icons/bs";
 
-export default function Faqs() {
+export default function Faqs({ id }) {
   return (
-    <div className="px-40 py-10">
+    <div id={id} className="px-40 py-10">
       <h1 className="text-myOrange font-bold text-[30px]">
         Frequently Asked Questions
       </h1>

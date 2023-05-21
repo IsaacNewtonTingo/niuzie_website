@@ -1,9 +1,12 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa";
 
-export default function Intro() {
+export default function Intro({ id }) {
   return (
-    <div className="flex justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-40 mt-[80px]">
+    <div
+      id={id}
+      className="flex justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-40 mt-[80px]"
+    >
       <div className="w-[50%] py-20">
         <h1 className="text-[40px] text-lightBlue font-bold">
           <span className="text-myOrange">One platform </span>
@@ -15,10 +18,16 @@ export default function Intro() {
           access to hundreds of buyers and seller from all over Kenya.
         </h1>
 
-        <button className="bg-myOrange text-sm h-[40px] px-4 font-bold text-white rounded-lg flex flex-row items-center justify-between mt-10">
-          <p>Download the app</p>
-          <FaDownload className="ml-4" />
-        </button>
+        <a
+          href="https://play.google.com/store/search?q=niuzie&c=apps"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="bg-myOrange text-sm h-[40px] px-4 font-bold text-white rounded-lg flex flex-row items-center justify-between mt-10">
+            <p>Download the app</p>
+            <FaDownload className="ml-4" />
+          </button>
+        </a>
       </div>
 
       <img

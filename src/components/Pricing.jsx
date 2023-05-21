@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 import { RxCrossCircled } from "react-icons/rx";
 
-export default function Pricing() {
+export default function Pricing({ id }) {
   const basicBenefits = [
     {
       name: "Post 2 free products",
@@ -65,7 +65,10 @@ export default function Pricing() {
     },
   ];
   return (
-    <div className="bg-gradient-to-r from-dark via-cardColor to-dark px-20 py-10">
+    <div
+      id={id}
+      className="bg-gradient-to-r from-dark via-cardColor to-dark px-20 py-10"
+    >
       <h1 className="text-myOrange font-bold text-[30px]">Pricing</h1>
 
       <div className="flex items-center justify-between mt-10">
@@ -77,7 +80,7 @@ export default function Pricing() {
 
           {basicBenefits.map((item, i) => (
             <div key={i} className="flex items-center">
-              {item.iconType == "check" ? (
+              {item.iconType === "check" ? (
                 <AiFillCheckCircle color="#00FF66" />
               ) : (
                 <RxCrossCircled color="red" />
@@ -95,7 +98,7 @@ export default function Pricing() {
 
           {basicBenefits.map((item, i) => (
             <div key={i} className="flex items-center">
-              {item.iconType == "check" ? (
+              {item.iconType === "check" ? (
                 <AiFillCheckCircle color="#00FF66" />
               ) : (
                 <RxCrossCircled color="red" />
@@ -113,7 +116,7 @@ export default function Pricing() {
 
           {platinumBenefits.map((item, i) => (
             <div key={i} className="flex items-center">
-              {item.iconType == "check" ? (
+              {item.iconType === "check" ? (
                 <AiFillCheckCircle color="#00FF66" />
               ) : (
                 <RxCrossCircled color="red" />
