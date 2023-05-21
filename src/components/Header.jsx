@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaDownload } from "react-icons/fa";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { GrClose } from "react-icons/gr";
 
 import { Link } from "react-scroll";
 import MenuModal from "./MenuModal";
@@ -87,7 +86,7 @@ export default function Header({ scrollToSection }) {
 
           <AiOutlineMenu
             onClick={() => setOpen(true)}
-            className="text-[120px]"
+            className="text-[120px] block sm:hidden"
           />
         </div>
       ) : (

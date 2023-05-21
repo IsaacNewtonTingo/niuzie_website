@@ -42,7 +42,15 @@ export default function ContactUs({ id }) {
               <FaPhoneSquareAlt className="text-myOrange mr-3" />
               <p className="font-bold">Mobile number</p>
             </div>
-            <p className="ml-7">+254750925599</p>
+
+            <a
+              className="ml-7"
+              href="tel:+254750925599"
+              target="_blank"
+              rel="noreferrer"
+            >
+              +254750925599
+            </a>
           </div>
 
           <div className="mt-10  w-full sm:w-[40%]">
@@ -50,7 +58,14 @@ export default function ContactUs({ id }) {
               <FaPhoneSquareAlt className="text-myOrange mr-3" />
               <p className="font-bold">WhatsApp number</p>
             </div>
-            <p className="ml-7">+254750925599</p>
+            <a
+              className="ml-7"
+              href="https://wa.me/254750925599"
+              target="_blank"
+              rel="noreferrer"
+            >
+              +254750925599
+            </a>
           </div>
 
           <div className="mt-10  w-full sm:w-[40%]">
@@ -58,7 +73,14 @@ export default function ContactUs({ id }) {
               <MdEmail className="text-myOrange mr-3" />
               <p className="font-bold">Email address</p>
             </div>
-            <p className="ml-7">info@niuzie@co.ke</p>
+            <a
+              className="ml-7"
+              href="mailto:info@niuzie@co.ke"
+              target="_blank"
+              rel="noreferrer"
+            >
+              info@niuzie@co.ke
+            </a>
           </div>
 
           <div className="mt-10  w-full sm:w-[40%]">

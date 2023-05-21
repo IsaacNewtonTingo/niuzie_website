@@ -5,7 +5,7 @@ export default function Intro({ id }) {
   return (
     <div
       id={id}
-      className="sm:flex justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-10px sm:px-40 mt-[80px]"
+      className="flex items-center flex-col sm:flex sm:flex-row justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-10px pb-10 sm:px-40 mt-[80px]"
     >
       <div className="w-full sm:w-[50%] p-10  sm:py-20">
         <h1 className="text-[20px] sm:text-[40px] text-lightBlue font-bold">
@@ -33,7 +33,7 @@ export default function Intro({ id }) {
       <img
         src="/lead-img.png"
         alt="niuzie app"
-        className="w-full sm:w-[30%] object-contain"
+        className="w-[80%] sm:w-[30%] object-contain"
       />
     </div>
   );
