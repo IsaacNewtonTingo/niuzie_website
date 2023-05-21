@@ -67,7 +67,7 @@ export default function Pricing({ id }) {
   return (
     <div
       id={id}
-      className="bg-gradient-to-r from-dark via-cardColor to-dark px-10 sm:px-40 py-10"
+      className="bg-gradient-to-r from-dark via-cardColor to-dark px-10  md:px-20 xl:px-40 py-10"
     >
       <h1 className="text-myOrange font-bold text-[30px]">Pricing</h1>
 

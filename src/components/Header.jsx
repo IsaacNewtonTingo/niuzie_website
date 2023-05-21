@@ -38,33 +38,33 @@ export default function Header({ scrollToSection }) {
   return (
     <>
       {!open ? (
-        <div className="bg-almostDark h-[80px] flex items-center justify-between px-10 sm:px-40 fixed top-0 left-0 w-full">
+        <div className="bg-almostDark h-[80px] flex items-center justify-between px-10 lg:px-10 xl:px-40 fixed top-0 left-0 w-full">
           <Link
             activeClass="active"
             to="intro"
             spy={true}
-            smooth={true}
+            lgooth={true}
             offset={-70}
             duration={500}
             className="cursor-pointer"
           >
             <img
-              className="w-[40%] sm:w-[120px] object-contain"
+              className="w-[40%] md:w-[120px] lg:w-[120px] object-contain"
               src="/niuzie-full-logo.png"
               alt="niuzie logo"
             />
           </Link>
 
-          <div className="hidden sm:flex">
+          <div className="hidden lg:flex">
             {linkItems.map((item, i) => (
               <Link
                 activeClass="active"
                 to={item.linkTo}
                 spy={true}
-                smooth={true}
+                lgooth={true}
                 offset={-70}
                 duration={500}
-                className="text-lightBlue text-sm font-semibold mr-8 hover:text-myOrange cursor-pointer"
+                className="text-lightBlue text-lg font-semibold mr-8 hover:text-myOrange cursor-pointer"
                 key={i}
               >
                 {item.name}
@@ -76,9 +76,9 @@ export default function Header({ scrollToSection }) {
             href="https://play.google.com/store/search?q=niuzie&c=apps"
             target="_blank"
             rel="noreferrer"
-            className="hidden sm:block"
+            className="hidden lg:block"
           >
-            <button className="bg-myOrange text-sm h-[40px] px-4 font-bold text-white rounded-lg sm:flex flex-row items-center justify-between hidden">
+            <button className="bg-myOrange text-lg h-[40px] px-4 font-bold text-white rounded-lg lg:flex flex-row items-center justify-between hidden">
               <p>Download the app</p>
               <FaDownload className="ml-4" />
             </button>
@@ -86,23 +86,23 @@ export default function Header({ scrollToSection }) {
 
           <AiOutlineMenu
             onClick={() => setOpen(true)}
-            className="text-[120px] block sm:hidden"
+            className="text-[120px] md:text-[50px] block lg:hidden"
           />
         </div>
       ) : (
         <>
-          <div className="bg-almostDark h-[80px] flex items-center justify-between px-10 sm:px-40 fixed top-0 left-0 w-full">
+          <div className="bg-almostDark h-[80px] flex items-center justify-between px-10 lg:px-40 fixed top-0 left-0 w-full">
             <Link
               activeClass="active"
               to="intro"
               spy={true}
-              smooth={true}
+              lgooth={true}
               offset={-70}
               duration={500}
               className="cursor-pointer"
             >
               <img
-                className="w-[40%] sm:w-[120px] object-contain"
+                className="w-[40%] md:w-[120px] lg:w-[120px] object-contain"
                 src="/niuzie-full-logo.png"
                 alt="niuzie logo"
               />
@@ -110,7 +110,7 @@ export default function Header({ scrollToSection }) {
 
             <AiOutlineClose
               onClick={() => setOpen(false)}
-              className="text-[120px] text-white"
+              className="text-[120px] md:text-[50px] block lg:hidden"
             />
 
             <MenuModal linkItems={linkItems} setOpen={setOpen} />

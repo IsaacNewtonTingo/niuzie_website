@@ -14,7 +14,7 @@ export default function MenuModal({ linkItems, setOpen }) {
           smooth={true}
           offset={-70}
           duration={500}
-          className="text-lightBlue text-md mb-4 font-semibold mr-8 hover:text-myOrange cursor-pointer"
+          className="text-lightBlue text-md md:text-[30px] mb-4 font-semibold mr-8 hover:text-myOrange cursor-pointer"
           key={i}
         >
           {item.name}

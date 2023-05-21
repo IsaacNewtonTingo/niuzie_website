@@ -31,13 +31,13 @@ export default function ContactUs({ id }) {
   return (
     <div
       id={id}
-      className="bg-gradient-to-r from-dark via-cardColor to-dark px-10 sm:px-40 py-10 sm:flex justify-between"
+      className="bg-gradient-to-r from-dark via-cardColor to-dark px-10 md:px-20 xl:px-40 py-10 sm:flex justify-between"
     >
-      <div className="w-full sm:w-[40%]">
+      <div className="w-full md:w-[50%] xl:w-[40%]">
         <h1 className="text-myOrange font-bold text-[30px]">Contact Us</h1>
 
         <div className="">
-          <div className="mt-10  w-full sm:w-[40%]">
+          <div className="mt-10  w-full xl:w-[40%]">
             <div className="flex items-center">
               <FaPhoneSquareAlt className="text-myOrange mr-3" />
               <p className="font-bold">Mobile number</p>
@@ -53,7 +53,7 @@ export default function ContactUs({ id }) {
             </a>
           </div>
 
-          <div className="mt-10  w-full sm:w-[40%]">
+          <div className="mt-10  w-full xl:w-[40%]">
             <div className="flex items-center">
               <FaPhoneSquareAlt className="text-myOrange mr-3" />
               <p className="font-bold">WhatsApp number</p>
@@ -68,7 +68,7 @@ export default function ContactUs({ id }) {
             </a>
           </div>
 
-          <div className="mt-10  w-full sm:w-[40%]">
+          <div className="mt-10  w-full xl:w-[40%]">
             <div className="flex items-center">
               <MdEmail className="text-myOrange mr-3" />
               <p className="font-bold">Email address</p>
@@ -83,7 +83,7 @@ export default function ContactUs({ id }) {
             </a>
           </div>
 
-          <div className="mt-10  w-full sm:w-[40%]">
+          <div className="mt-10  w-full xl:w-[40%]">
             <div className="flex items-center">
               <AiFillFacebook className="text-myOrange mr-3" />
               <p className="font-bold">Facebook</p>
@@ -96,7 +96,7 @@ export default function ContactUs({ id }) {
             </a>
           </div>
 
-          <div className="mt-10  w-full sm:w-[40%]">
+          <div className="mt-10  w-full xl:w-[40%]">
             <div className="flex items-center">
               <AiFillTwitterSquare className="text-myOrange mr-3" />
               <p className="font-bold">Twitter</p>
@@ -109,7 +109,7 @@ export default function ContactUs({ id }) {
             </a>
           </div>
 
-          <div className="mt-10  w-full sm:w-[40%]">
+          <div className="mt-10  w-full xl:w-[40%]">
             <div className="flex items-center">
               <AiOutlineInstagram className="text-myOrange mr-3" />
               <p className="font-bold">Instagram</p>
@@ -124,7 +124,7 @@ export default function ContactUs({ id }) {
         </div>
       </div>
 
-      <div className="w-full sm:w-[40%] mt-10 sm:mt-0 bg-dark p-10  rounded-lg flex flex-col">
+      <div className="w-full md:w-[50%] xl:w-[40%] mt-10 sm:mt-0 bg-dark p-10  rounded-lg flex flex-col">
         <form className="self-center" onSubmit={handleSubmit}>
           <h1 className="text-myOrange font-bold text-[30px] mb-4">
             Get in touch
