@@ -5,6 +5,7 @@ import Faqs from "./components/Faqs";
 import Header from "./components/Header";
 import How from "./components/How";
 import Intro from "./components/Intro";
+import Pricing from "./components/Pricing";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Intro />
       <AboutUs />
       <How />
+      <Pricing />
       <Faqs />
       <ContactUs />
     </div>

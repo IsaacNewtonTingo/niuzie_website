@@ -19,16 +19,17 @@ export default function How() {
           the admin. Ten days to the end of this period, you will receive a
           message that your product is almost expiring so that you can renew it.
           <br /> <br /> When this period ends without renewal, your product will
-          be inactive but you can still renew it. If you have exceeded the
-          limit, you will be required to pay KSH. 50 for every product you post
-          but they will still wait for approval from the admin. The products
-          will also expire after three months and you will be required to renew
-          them.
+          be inactive but you can still renew it for free. If you have exceeded
+          the limit, you will be required to pay KSH. 50 for every product you
+          post but they will still wait for approval from the admin.This takes a
+          few minutes to a maximum of 24 hours. The products will also expire
+          after three months and you will be required to renew them.
           <br />
           <br /> If you are a premium user, you will be able to post unlimited
           number of products but they will still wait for approval from the
-          admin. The products will also expire after three months and you will
-          be required to renew them.
+          admin.This takes a few minutes to a maximum of 24 hours. The products
+          will also expire after three months and you will be required to renew
+          them.
         </p>
       </div>
 
@@ -76,8 +77,7 @@ export default function How() {
         <div>
           <li className="w-[70%]">
             Note that your personal details at the bottom cannot be edited in
-            this screen. Navigate to you your in order to perform this
-            functionality.
+            this screen. Navigate to your profile to perform this functionality.
           </li>
           <br />
           <li className="w-[70%]">
@@ -94,7 +94,8 @@ export default function How() {
 
           <li className="w-[70%]">
             You will have to wait for your product to be reviewed by the admin
-            before it can go live for everyone to view.
+            before it can go live for everyone to view. This takes a few minutes
+            to a maximum of 24 hours
           </li>
           <br />
 
@@ -165,7 +166,7 @@ export default function How() {
           <br />
           <li className="w-[70%]">
             You will now wait for approval from the admin and your product will
-            be live
+            be live. This takes a few minutes to a maximum of 24 hours.
           </li>
         </div>
 

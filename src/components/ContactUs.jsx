@@ -29,7 +29,7 @@ export default function ContactUs() {
     console.log(data);
   }
   return (
-    <div className="px-20 py-10 flex justify-between">
+    <div className="bg-gradient-to-r from-dark via-cardColor to-dark px-20 py-10 flex justify-between">
       <div className="w-[40%]">
         <h1 className="text-myOrange font-bold text-[30px]">Contact Us</h1>
 
@@ -39,7 +39,15 @@ export default function ContactUs() {
               <FaPhoneSquareAlt className="text-myOrange mr-3" />
               <p className="font-bold">Mobile number</p>
             </div>
-            <p className="ml-7">+254712345678</p>
+            <p className="ml-7">+254750925599</p>
+          </div>
+
+          <div className="mt-10 w-[40%]">
+            <div className="flex items-center">
+              <FaPhoneSquareAlt className="text-myOrange mr-3" />
+              <p className="font-bold">WhatsApp number</p>
+            </div>
+            <p className="ml-7">+254750925599</p>
           </div>
 
           <div className="mt-10 w-[40%]">
@@ -91,12 +99,14 @@ export default function ContactUs() {
         </div>
       </div>
 
-      <div className="w-[40%]">
-        <h1 className="text-myOrange font-bold text-[30px]">Get in touch</h1>
-
-        <form onSubmit={handleSubmit}>
+      <div className="w-[40%] bg-dark p-10  rounded-lg flex flex-col">
+        <form className="self-center" onSubmit={handleSubmit}>
+          <h1 className="text-myOrange font-bold text-[30px] mb-4">
+            Get in touch
+          </h1>
           <label className="font-semibold">First name</label> <br />
           <Input
+            required
             type="text"
             placeholder="e.g John"
             name="firstName"
@@ -108,6 +118,7 @@ export default function ContactUs() {
           <br />
           <label className="font-semibold">Last name</label> <br />
           <Input
+            required
             type="text"
             placeholder="e.g Doe"
             name="lastName"
@@ -119,7 +130,8 @@ export default function ContactUs() {
           <br />
           <label className="font-semibold">Phone number</label> <br />
           <Input
-            type="text"
+            required
+            type="tel"
             placeholder="e.g +254766445522"
             name="phoneNumber"
             id="phoneNumber"
@@ -130,15 +142,16 @@ export default function ContactUs() {
           <br />
           <label className="font-semibold">Message</label> <br />
           <textarea
+            required
             name="message"
             id="message"
             cols="30"
             rows="10"
             value={data.message}
             onChange={handleChange}
-            className={`rounded-lg h-[100px] w-1/2 p-4 mt-4 text-sm bg-dark border-[#0085FF] border-[1px]`}
+            className={`rounded-lg h-[100px] w-full p-4 mt-4 text-sm bg-dark border-[#0085FF] border-[1px]`}
           ></textarea>
-          <button className="bg-myOrange text-sm w-1/2 h-[40px] px-4 mt-4 font-bold text-white rounded-lg flex flex-row items-center justify-center ">
+          <button className="bg-myOrange text-sm w-full h-[40px] px-4 mt-4 font-bold text-white rounded-lg flex flex-row items-center justify-center ">
             <p>Send message</p>
           </button>
         </form>
