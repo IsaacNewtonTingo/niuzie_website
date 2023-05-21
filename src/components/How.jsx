@@ -3,7 +3,7 @@ import React from "react";
 export default function How() {
   return (
     <div className="">
-      <div className="bg-gradient-to-r from-dark via-cardColor to-dark px-20 py-10">
+      <div className="bg-gradient-to-r from-dark via-cardColor to-dark px-40 py-10">
         <h1 className="text-myOrange font-bold text-[30px]">How it works</h1>
         <p className="text-lightBlue mt-10">
           The below section describes various steps to take when interacting
@@ -14,10 +14,11 @@ export default function How() {
         <p className="text-lightBlue font-bold">1. Listing a product</p>
         <br />
         <p>
-          Every regular user has the ability to post at most 2 products for
-          free. This products will be active for three months upon approval by
-          the admin. Ten days to the end of this period, you will receive a
-          message that your product is almost expiring so that you can renew it.
+          Every regular user has the ability to post at most{" "}
+          <span className="font-bold text-white">2 products</span> for free.
+          This products will be active for three months upon approval by the
+          admin. Ten days to the end of this period, you will receive a message
+          that your product is almost expiring so that you can renew it.
           <br /> <br /> When this period ends without renewal, your product will
           be inactive but you can still renew it for free. If you have exceeded
           the limit, you will be required to pay KSH. 50 for every product you
@@ -36,7 +37,7 @@ export default function How() {
       <br />
       <br />
 
-      <div className="px-20 py-10">
+      <div className="px-40 py-10">
         <p className="font-bold">a. Listing products for free</p> <br />
         <div className="flex items-center justify-between">
           <li className="w-[70%]">
@@ -52,7 +53,7 @@ export default function How() {
           />
         </div>
       </div>
-      <div className="flex items-center justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-20 py-10">
+      <div className="flex items-center justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-40 py-10">
         <div>
           <li className="w-[70%]">
             Go ahead and click “Post product” button. If you haven't created an
@@ -73,7 +74,7 @@ export default function How() {
           alt="post-product-niuzie"
         />
       </div>
-      <div className="flex items-center justify-between px-20 py-10">
+      <div className="flex items-center justify-between px-40 py-10">
         <div>
           <li className="w-[70%]">
             Note that your personal details at the bottom cannot be edited in
@@ -112,7 +113,7 @@ export default function How() {
         />
       </div>
 
-      <div className="bg-gradient-to-r from-dark via-cardColor to-dark px-20 py-10">
+      <div className="bg-gradient-to-r from-dark via-cardColor to-dark px-40 py-10">
         <p className="font-bold">
           b. Listing product when you have exceeded the limit (2)
         </p>
@@ -132,7 +133,7 @@ export default function How() {
         </div>
       </div>
 
-      <div className="flex items-center justify-between px-20 py-10">
+      <div className="flex items-center justify-between px-40 py-10">
         <div>
           <li className="w-[70%]">
             When you list new products, these products will be added to the cart
@@ -157,7 +158,7 @@ export default function How() {
         />
       </div>
 
-      <div className="flex items-center justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-20 py-10">
+      <div className="flex items-center justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-40 py-10">
         <div>
           <li className="w-[70%]">
             A new window will that will enable you to enter your M-PESA phone
@@ -177,7 +178,7 @@ export default function How() {
         />
       </div>
 
-      <div className=" px-20 py-10">
+      <div className=" px-40 py-10">
         <p className="font-bold">c. Listing product as a premium member</p>
         <br />
         <p>
@@ -204,7 +205,7 @@ export default function How() {
         </li>
       </div>
 
-      <div className="flex items-center justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-20 py-10">
+      <div className="flex items-center justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-40 py-10">
         <div>
           <p className="font-bold">3. Posting a product request</p> <br />
           <p className="w-[70%]">
@@ -225,7 +226,7 @@ export default function How() {
         />
       </div>
 
-      <div className="flex items-center justify-between px-20 py-10">
+      <div className="flex items-center justify-between px-40 py-10">
         <div>
           <li className="w-[70%]">
             Go ahead and click “Post product request” button. If you haven't

@@ -26,7 +26,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="bg-almostDark h-[80px] flex items-center justify-between px-20 fixed top-0 left-0 w-full">
+    <div className="bg-almostDark h-[80px] flex items-center justify-between px-40 fixed top-0 left-0 w-full">
       <img
         className="w-[120px] object-contain"
         src="/niuzie-full-logo.png"
