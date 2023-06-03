@@ -23,6 +23,15 @@ jobs:
           npm run build
           npm run test
 
+      - name: Use the secret
+        run: echo ${{ secrets.REACT_APP_ENDPOINT }}
+
+      - name: Use the secret
+        run: echo ${{ secrets.REACT_APP_GOOGLE_RECAPTCHA_SECRET_KEY }}
+
+      - name: Use the secret
+        run: echo ${{ secrets.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY }}
+
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
