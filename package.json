@@ -1,6 +1,6 @@
 {
   "name": "niuzie_website",
-  "homepage": "https://niuzieco.ke",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

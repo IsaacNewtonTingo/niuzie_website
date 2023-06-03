@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function AboutUs({ id }) {
+export default function AboutUs({ id, "data-testid": testId }) {
   //
   return (
-    <div id={id} className="px-10 sm:px-40 py-10">
+    <div id={id} data-testid={testId} className="px-10 sm:px-40 py-10">
       <h1 className="text-myOrange font-bold text-[30px]">About Us</h1>
 
       <p className="mt-10">

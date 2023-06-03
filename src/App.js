@@ -23,7 +23,7 @@ function App() {
     <div className="bg-dark h-full text-gray-300">
       <Header id="intro" scrollToSection={scrollToSection} />
       <Intro id="intro" />
-      <AboutUs id="about-us" />
+      <AboutUs id="about-us" data-testid="about-us-section" />
       <How id="how-it-works" />
       <Pricing id="pricing" />
       <Faqs id="faqs" />
