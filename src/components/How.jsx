@@ -7,8 +7,8 @@ export default function How({ id }) {
         <h1 className="text-myOrange font-bold text-[30px]">How it works</h1>
         <p className="text-lightBlue mt-10">
           The below section describes various steps to take when interacting
-          with Niuzie mobile app either as a seller listing their products or as
-          a buyer looking for specific items.
+          with <strong>Niuzie mobile app</strong> either as a seller listing
+          their products or as a buyer looking for specific items.
         </p>
         <br />
         <p className="text-lightBlue font-bold">1. Listing a product</p>
@@ -56,15 +56,16 @@ export default function How({ id }) {
       <div className="sm:flex sm:items-center sm:justify-between bg-gradient-to-r from-dark via-cardColor to-dark px-10 sm:px-40 py-10">
         <div>
           <li className="w-full sm:w-[70%]">
-            Go ahead and click “Post product” button. If you haven't created an
-            account, a registration window will show. Finish the registration
-            process then come back and continue the process.
+            Go ahead and click <strong>“Post product”</strong> button. If you
+            haven't created an account, a <strong>registration</strong> window
+            will show. Finish the registration process then come back and
+            continue the process.
           </li>
           <br />
           <li className="w-full sm:w-[70%]">
-            If you are already logged in this screen will open where you will
-            enter your product details including images of the given product.
-            You will only be able to add up to 8 images.
+            If you are already <strong>logged in</strong> this screen will open
+            where you will enter your product details including images of the
+            given product. You will only be able to add up to 8 images.
           </li>
         </div>
 
@@ -194,14 +195,14 @@ export default function How({ id }) {
         </li>
         <br />
         <li>
-          If you have logged in, clicking on either the call or sms icon will
-          display the seller details
+          If you have <strong>logged in</strong>, clicking on either the call or
+          sms icon will display the seller details
         </li>
         <br />
         <li>
-          If you have not logged in, clicking those icons will prompt you for
-          login or signup. This will then enable you to access fully the seller
-          contact details.
+          If you have not <strong>logged in</strong>, clicking those icons will
+          prompt you for login or signup. This will then enable you to access
+          fully the seller contact details.
         </li>
       </div>
 
@@ -235,9 +236,10 @@ export default function How({ id }) {
           </li>
           <br />
           <li className="w-full sm:w-[70%]">
-            If you are already logged in, you will see the below screen that you
-            can give a description of the product that you are looking for.
-            Sellers will be able to see your contact details and reach out you.
+            If you are already <strong>logged in</strong>, you will see the
+            below screen that you can give a description of the product that you
+            are looking for. Sellers will be able to see your contact details
+            and reach out you.
           </li>
         </div>
 
