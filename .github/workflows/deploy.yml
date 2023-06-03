@@ -18,13 +18,10 @@ jobs:
           node-version: "16"
 
       - name: Use the secret
-        run: echo ${{ secrets.REACT_APP_ENDPOINT }}
-
-      - name: Use the secret
-        run: echo ${{ secrets.REACT_APP_GOOGLE_RECAPTCHA_SECRET_KEY }}
-
-      - name: Use the secret
-        run: echo ${{ secrets.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY }}
+        run: |
+          echo ${{ env.REACT_APP_ENDPOINT }}
+          echo ${{ env.REACT_APP_GOOGLE_RECAPTCHA_SECRET_KEY }}
+          echo ${{ env.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY }}
 
       - name: 🔨 Build Project
         run: |
