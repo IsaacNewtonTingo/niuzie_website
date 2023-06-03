@@ -43,7 +43,7 @@ export default function ContactUs({ id }) {
     });
     captchaRef.current.reset();
 
-    const url = `${process.env.REACT_APP_ENDPOINT}/user/web-contact-us`;
+    const url = `${process.secrets.REACT_APP_ENDPOINT}/user/web-contact-us`;
 
     try {
       const response = await fetch(url, {
@@ -225,7 +225,7 @@ export default function ContactUs({ id }) {
             className={`rounded-lg h-[100px] w-full p-4 my-4 text-sm bg-dark border-[#0085FF] border-[1px]`}
           ></textarea>
           <ReCAPTCHA
-            sitekey={process.env.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY}
+            sitekey={process.secrets.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY}
             ref={captchaRef}
           />
           <button
