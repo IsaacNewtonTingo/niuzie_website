@@ -17,11 +17,6 @@ jobs:
         with:
           node-version: "16"
 
-      - name: 🔨 Build Project
-        run: |
-          npm install
-          npm run build
-
       - name: Use the secret
         run: echo ${{ secrets.REACT_APP_ENDPOINT }}
 
@@ -30,6 +25,11 @@ jobs:
 
       - name: Use the secret
         run: echo ${{ secrets.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY }}
+
+      - name: 🔨 Build Project
+        run: |
+          npm install
+          npm run build
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
