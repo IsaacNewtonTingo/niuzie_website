@@ -9,7 +9,7 @@ export default function Intro({ id }) {
     >
       <div className="w-full lg:w-[50%] p-10 lg:p-0 lg:py-20">
         <h1 className="text-[25px] lg:text-[40px] text-lightBlue font-bold">
-          <span className="text-myOrange">One Tingo platform </span>
+          <span className="text-myOrange">One Isaac Tingo platform </span>
           to connect sellers and buyers. List your products and your needs
         </h1>
 
