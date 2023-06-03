@@ -7,7 +7,6 @@ import {
   AiOutlineInstagram,
 } from "react-icons/ai";
 import Input from "./Input";
-import axios from "axios";
 import { Toaster, toast } from "react-hot-toast";
 
 import ReCAPTCHA from "react-google-recaptcha";
@@ -46,27 +45,36 @@ export default function ContactUs({ id }) {
 
     const url = `${process.env.REACT_APP_ENDPOINT}/user/web-contact-us`;
 
-    await axios
-      .post(url, data)
-      .then((response) => {
-        setProcessing(false);
-        if (response.data.status === "Success") {
-          toast.success("Your message was sent successfully");
-          setData({
-            firstName: "",
-            lastName: "",
-            phoneNumber: "",
-            message: "",
-          });
-        } else {
-          toast.error(response.data.message);
-        }
-      })
-      .catch((err) => {
-        toast.error(err.message);
-        setProcessing(false);
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
       });
+
+      const responseData = await response.json();
+
+      setProcessing(false);
+
+      if (responseData.status === "Success") {
+        toast.success("Your message was sent successfully");
+        setData({
+          firstName: "",
+          lastName: "",
+          phoneNumber: "",
+          message: "",
+        });
+      } else {
+        toast.error(responseData.message);
+      }
+    } catch (err) {
+      toast.error(err.message);
+      setProcessing(false);
+    }
   }
+
   return (
     <div
       id={id}
